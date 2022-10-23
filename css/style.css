@@ -1,0 +1,407 @@
+/*GOOGLE FONTS LINK */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* GLOBAL CSS */
+body {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  color: #3d2514;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mitr", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  display: flex;
+}
+
+.no-padding {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+/* HEADER SECTION START */
+header {
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  z-index: +1;
+}
+.row {
+  width: 100%;
+}
+
+header .nav-items {
+  float: right;
+  margin-top: -15px;
+}
+header .contact {
+  margin: -65px 40px 0px 0px;
+  float: right;
+  align-items: center;
+}
+header .contact h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #3d2514;
+}
+.logo img {
+  width: 18%;
+  margin-left: 5%;
+}
+header ul li {
+  margin-right: 40px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 21px;
+  color: #3d2514;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+header ul li:hover {
+  color: #884306;
+}
+header ul li::after {
+  position: absolute;
+  font: var(--fa-font-solid);
+  content: "\f805";
+  opacity: 0;
+  left: -0;
+  bottom: -18px;
+  font-size: 15px;
+}
+header ul li:hover::after {
+  left: 38%;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+header .contact a i {
+  color: #3d2514;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* BANNER SECTION START */
+.banner-section {
+  background: url(../images/banner-bg.png) no-repeat center top;
+  background-size: cover;
+}
+.banner-section .banner-heading {
+  padding: 250px 0px;
+}
+.banner-section .banner-heading h6 {
+  font-family: "Bebas Neue", cursive;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='13' stroke-linecap='square'/%3e%3c/svg%3e");
+  padding: 8px 12px;
+  display: inline-block;
+  color: #614521;
+  font-size: 19px;
+}
+.banner-section .banner-heading h1 {
+  font-weight: 700;
+  color: #3d2514;
+  text-transform: uppercase;
+  font-size: 110px;
+  line-height: 85px;
+  -webkit-text-stroke: 4px #fee8bb;
+  padding: 20px 0;
+}
+.banner-section .banner-heading h1 span {
+  display: block;
+  font-size: 70px;
+  font-weight: 700;
+}
+.banner-section .banner-shadow {
+  position: absolute;
+  left: 48%;
+  top: 12%;
+  width: 50%;
+}
+.banner-section .banner-burger {
+  position: absolute;
+  left: 61%;
+  top: 40%;
+}
+.banner-section .banner-drinks {
+  position: absolute;
+  left: 77%;
+  top: 23%;
+}
+.banner-section .banner-fries {
+  position: absolute;
+  left: 52%;
+  top: 35%;
+}
+.banner-section .banner-offer-bg {
+  position: absolute;
+  left: 52%;
+  top: 74%;
+}
+.banner-section .banner-offer-text {
+  position: absolute;
+  left: 55%;
+  top: 79%;
+}
+
+/* ABOUT SECTION START */
+.about-section {
+  padding: 50px 0;
+}
+
+.about-section .third-img {
+  margin-top: 36px;
+}
+.about-section .about-btn {
+  text-align: center;
+  padding: 55px 0;
+}
+.about-section .about-btn button {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #ffc045;
+  border: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+  color: #3d2514;
+}
+
+/* ITEM SECTION START */
+.item-section .item-section-heading {
+  text-align: center;
+  margin-top: -50px;
+}
+.item-section .item-section-heading p {
+  padding: 10px 116px;
+}
+.item-section .item-section-heading h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.item-section .item-section-img {
+  text-align: center;
+  padding: 15px 0;
+}
+.item-section .item-section-img h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  color: #3d2514;
+}
+.item-section .item-section-img button {
+  width: 190px;
+  height: 55px;
+  background: #de0b0b;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.item-section .item-section-img button:hover {
+  background: #bf2222;
+}
+
+.item-section .item-section-img button:active {
+  transform: scale(1.025);
+}
+
+/* FEATURE SECTION START */
+.feature-section h3 {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+.feature-section h3 span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.feature-section p {
+  font-family: "Montserrat", sans-serif;
+  width: 77%;
+  margin-top: 20px;
+  line-height: 28px;
+}
+.feature-section .feature-section-items {
+  padding: 25px 0px;
+  margin-top: 110px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.feature-section .feature-section-items img {
+  width: 100%;
+}
+
+/* RESERVATION SECTION START */
+.reservation-section .reservation-items {
+  text-align: center;
+}
+.reservation-items h6 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.reservation-items h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 650;
+}
+
+.reservation-items-inputs input {
+  width: 380px;
+  height: 60px;
+  padding: 0px 15px;
+  border-radius: 6px;
+  margin-top: 30px;
+  outline: none;
+  border: 1px solid #bebebe;
+}
+.reservation-items-inputs input::placeholder {
+  color: #3d3d3d;
+}
+.reservation-items-inputs button {
+  background: #bf2222;
+  color: #fff;
+  width: 380px;
+  height: 60px;
+  margin-top: 30px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #bebebe;
+  font-size: 25px;
+  font-weight: 800;
+}
+.reservation-items-inputs button:hover {
+  background: #bf2222;
+}
+
+.reservation-items-inputs button:active {
+  transform: scale(1.025);
+}
+.reservation-section {
+  position: relative;
+  padding: 100px 0;
+}
+.reservation-section::after {
+  content: "";
+  position: absolute;
+  background: url(../images/reservation-item-1.png) no-repeat center top;
+  width: 55%;
+  height: 125%;
+  left: 0px;
+  top: -15px;
+  z-index: -1;
+}
+.reservation-section::before {
+  content: "";
+  position: absolute;
+  background: url(../images/reservation-item-2.png) no-repeat center bottom;
+  width: 36%;
+  height: 125%;
+  right: 0px;
+  bottom: -175px;
+  z-index: -1;
+}
+
+/* FOOTER STARTING SECTION */
+.footer-starting {
+  background: url(../images/footer-bg.png) no-repeat center top;
+  background-size: cover;
+}
+.footer-starting .footer-left-content {
+  padding: 75px 50px;
+}
+
+.footer-starting .footer-left-content p {
+  color: #fff;
+  width: 98%;
+  margin-top: 45px;
+  line-height: 25px;
+}
+
+.footer-starting .footer-right-content {
+  margin-top: 240px;
+  margin-left: 25px;
+}
+.footer-starting .footer-right-content h4 {
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-starting .footer-right-content a i {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 30px;
+}
+/* FOOTER SECTION START */
+footer {
+  padding: 20px 0;
+  color: #fff;
+}
+footer .social-media {
+  text-align: right;
+}
+
+footer .social-media ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 3px;
+}
+footer .social-media ul li a .fa-brands {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #090908;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+footer .social-media ul li a i {
+  background: #fff;
+  color: #090908;
+  border-radius: 25px;
+}
+footer p {
+  margin-top: 32px;
+  margin-left: 40px;
+  font-family: "Bebas Neue", cursive;
+}
+footer ul {
+  margin-top: 25px;
+  float: right;
+}
